@@ -11,6 +11,7 @@ This repository contains the independent ICRA workshop website: [Humanoid-Safety
 - `index.html` — workshop page
 - `styles.css` — responsive styles
 - `favicon.svg` — local icon
+- `assets/banner/` — generated humanoid illustration and its generation prompt
 - `assets/people/` — original portraits and source references
 
 No dependencies or build step are required. Preview from this directory:
@@ -34,3 +35,5 @@ Bowen Weng, Ibrahim Habli, and Taisuke Kobayashi have agreed to participate, sub
 Three additional speaker positions are shown as “To be announced,” consistent with the planned six invited talks. Portraits use rectangular 4:5 frames with individual framing in `styles.css`. Xinye Liu is represented by initials until a verified photograph is available.
 
 Confirm workshop acceptance, the final date, and submission details before updating the corresponding public claims. Portrait and biography sources are recorded in [`assets/people/SOURCES.md`](assets/people/SOURCES.md).
+
+The hero uses a generated humanoid-laboratory illustration, a translucent dark-teal text panel, and a separate event-information strip. On narrower screens, the image and text stack to preserve the complete robot. The built-in image-generation tool and exact prompt are documented in [`assets/banner/SOURCES.md`](assets/banner/SOURCES.md). It is a conceptual illustration, not a photograph from this proposed workshop.
