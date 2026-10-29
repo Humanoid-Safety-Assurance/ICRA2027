@@ -11,6 +11,7 @@ This repository contains the independent ICRA workshop website: [Humanoid-Safety
 - `index.html` — workshop page
 - `styles.css` — responsive styles
 - `favicon.svg` — local icon
+- `assets/assurance-robot.svg` — original vector illustration for the change–evidence–decision figure
 - `assets/people/` — original portraits and source references
 
 No dependencies or build step are required. Preview from this directory:
