@@ -67,9 +67,38 @@ section > p:last-child { margin-bottom: 0; }
 .questions li { padding-left: 6px; }
 .questions li + li { margin-top: 9px; }
 .questions li::marker { color: var(--accent); }
-.organizers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 32px; margin: 0; padding: 0; list-style: none; }
+.section-note { color: var(--muted); font-size: 14px; }
+.speakers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 28px; margin-top: 28px; }
+.speaker { min-width: 0; }
+.portrait { position: relative; display: block; flex-shrink: 0; width: 128px; height: 160px; overflow: hidden; background: #eef1ed; }
+.portrait img { position: absolute; display: block; width: var(--photo-width, 100%); height: auto; max-width: none; left: var(--photo-left, 0%); top: var(--photo-top, 0%); }
+.portrait--bowen { --photo-width: 175%; --photo-left: -41%; }
+.portrait--ibrahim { --photo-width: 160%; --photo-left: -25%; }
+.portrait--taisuke { --photo-width: 125%; --photo-left: -12%; }
+.portrait--zijun { --photo-width: 140%; --photo-left: -10%; }
+.portrait--mehdi { --photo-width: 100%; }
+.portrait--morisawa { --photo-width: 100%; }
+.portrait--chuchu { --photo-width: 160%; --photo-left: -31%; }
+.portrait--paul { --photo-width: 190%; --photo-left: -42%; }
+.portrait--daeun { --photo-width: 150%; --photo-left: -25%; }
+.portrait--initials { display: grid; place-items: center; color: var(--accent); font-size: 32px; font-weight: 400; }
+.speaker > .portrait { width: 144px; height: 180px; margin: 0 auto 16px; }
+.speaker-heading { min-height: 62px; text-align: center; }
+.speaker h3 { margin: 0 0 3px; font-size: 19px; font-weight: 600; line-height: 1.35; }
+.speaker h3 a, .organizers .name { text-decoration: none; }
+.speaker h3 a:hover, .organizers .name:hover { text-decoration: underline; }
+.speaker .affiliation { margin: 0; }
+.speaker .bio { margin: 12px 0 0; font-size: 14px; line-height: 1.7; }
+.speaker-placeholders { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin: 36px 0 4px; padding-top: 28px; border-top: 1px solid var(--line); }
+.speaker-placeholder { min-width: 0; text-align: center; }
+.speaker-placeholder .portrait { width: 144px; height: 180px; margin: 0 auto 12px; }
+.portrait--pending { display: grid; place-items: center; border: 1px dashed #c6d2c9; background: transparent; color: #718077; font-size: 18px; letter-spacing: 0.06em; }
+.speaker-placeholder p { margin: 0; color: var(--muted); font-size: 14px; }
+.organizers { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 24px; margin: 24px 0 0; padding: 0; list-style: none; }
+.organizers li { min-width: 0; text-align: center; }
+.organizers .portrait { width: 112px; height: 140px; margin: 0 auto 12px; }
 .name, .affiliation { display: block; }
-.name { font-weight: 600; }
+.name { margin-bottom: 3px; font-weight: 600; line-height: 1.4; }
 .affiliation { color: var(--muted); font-size: 14px; }
 #contact a { overflow-wrap: anywhere; }
 footer { padding: 20px 0 28px; color: var(--muted); font-size: 12px; }
@@ -82,7 +111,18 @@ footer { padding: 20px 0 28px; color: var(--muted); font-size: 12px; }
   .subtitle { font-size: 19px; }
   .event-details { flex-direction: column; gap: 12px; }
   section { padding: 23px 0; }
-  .organizers { grid-template-columns: 1fr; gap: 14px; }
+  .speakers { grid-template-columns: 1fr; gap: 28px; }
+  .speaker { display: grid; grid-template-columns: 96px minmax(0, 1fr); column-gap: 18px; row-gap: 14px; }
+  .speaker > .portrait { width: 96px; height: 120px; margin: 0; }
+  .speaker-heading { min-height: 0; align-self: center; text-align: left; }
+  .speaker .bio { grid-column: 1 / -1; margin: 0; font-size: 15px; }
+  .speaker-placeholders { gap: 12px; margin-top: 28px; }
+  .speaker-placeholder .portrait { width: 80px; height: 100px; }
+  .speaker-placeholder p { font-size: 12px; }
+  .organizers { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; }
+  .organizers .portrait { width: 96px; height: 120px; }
+  .organizers .name { min-height: 2.8em; }
+  .organizers .affiliation { font-size: 13px; }
 }
 
 @media print {
@@ -94,5 +134,10 @@ footer { padding: 20px 0 28px; color: var(--muted); font-size: 12px; }
   h1 { font-size: 30pt; }
   .subtitle { font-size: 15pt; }
   h2 { break-after: avoid; }
+  .speaker { break-inside: avoid; }
+  .speaker .bio { font-size: 10pt; }
+  .speaker > .portrait { width: 80px; height: 100px; }
+  .speaker-placeholders { display: none; }
+  .organizers .portrait { width: 72px; height: 90px; }
   li { break-inside: avoid; }
 }

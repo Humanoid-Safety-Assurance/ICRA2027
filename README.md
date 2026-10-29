@@ -1,16 +1,17 @@
 # Assurance Under Change
 
-Website draft for **Assurance Under Change: Keeping Learning-Enabled Humanoid Robots Safe After Deployment**, a proposed full-day workshop at ICRA 2027.
+Website for **Assurance Under Change: Keeping Learning-Enabled Humanoid Robots Safe After Deployment**, a proposed full-day workshop at ICRA 2027.
 
 Final workshop acceptance and scheduling are pending. The proposed date is **24 or 28 May 2027**, at Coex, Seoul, South Korea.
 
 ## Website
 
-This repository contains the independent ICRA workshop website: [Humanoid-Safety-Assurance/ICRA2027](https://github.com/Humanoid-Safety-Assurance/ICRA2027). Content is based on the organizers' October 25, 2026 speaker brief.
+This repository contains the independent ICRA workshop website: [Humanoid-Safety-Assurance/icra2027](https://github.com/Humanoid-Safety-Assurance/icra2027). Workshop content is based on the organizers' October 25, 2026 speaker brief. Speaker and organizer profiles were checked against their academic, institutional, or professional pages on October 29, 2026.
 
 - `index.html` — workshop page
 - `styles.css` — responsive styles
 - `favicon.svg` — local icon
+- `assets/people/` — original portraits and source references
 
 No dependencies or build step are required. Preview from this directory:
 
@@ -22,6 +23,14 @@ Open `http://127.0.0.1:8000/`.
 
 ## Publication status
 
-These files contain a website draft. GitHub Pages and a custom domain have not been configured for this project. The existing Humanoids 2026 website is maintained separately.
+GitHub Pages publishes the root of `main` at:
 
-Confirm workshop acceptance, the final date, speaker participation, and submission details before updating the corresponding public claims. Candidate speakers are not listed as confirmed participants.
+[https://humanoid-safety-assurance.paiagent.ai/icra2027/](https://humanoid-safety-assurance.paiagent.ai/icra2027/)
+
+The project inherits the organization's Pages domain. The existing Humanoids 2026 website is maintained in a separate repository; this project uses only its own styles and image assets.
+
+Bowen Weng, Ibrahim Habli, and Taisuke Kobayashi have agreed to participate, subject to final workshop acceptance and scheduling. Other candidates are not listed as speakers. Talk titles have not been announced.
+
+Three additional speaker positions are shown as “To be announced,” consistent with the planned six invited talks. Portraits use rectangular 4:5 frames with individual framing in `styles.css`. Xinye Liu is represented by initials until a verified photograph is available.
+
+Confirm workshop acceptance, the final date, and submission details before updating the corresponding public claims. Portrait and biography sources are recorded in [`assets/people/SOURCES.md`](assets/people/SOURCES.md).
