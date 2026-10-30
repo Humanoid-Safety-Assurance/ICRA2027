@@ -30,9 +30,9 @@ GitHub Pages publishes the root of `main` at:
 
 The project inherits the organization's Pages domain. The existing Humanoids 2026 website is maintained in a separate repository; this project uses only its own styles and image assets.
 
-Bowen Weng, Ibrahim Habli, and Taisuke Kobayashi have agreed to participate, subject to final workshop acceptance and scheduling. Other candidates are not listed as speakers. Talk titles have not been announced.
+Bowen Weng, Ibrahim Habli, Taisuke Kobayashi, and Haimin Hu have agreed to participate, subject to final workshop acceptance and scheduling. Haimin Hu's profile and portrait were added on October 30, 2026. Other candidates are not listed as speakers. Talk titles have not been announced.
 
-Three additional speaker positions are shown as “To be announced,” consistent with the planned six invited talks. Portraits use rectangular 4:5 frames with individual framing in `styles.css`. Xinye Liu is represented by initials until a verified photograph is available.
+Two additional speaker positions are shown as “To be announced,” consistent with the planned six invited talks. The four speaker profiles use a two-column desktop layout. Portraits use rectangular 4:5 frames with individual framing in `styles.css`. Xinye Liu is represented by initials until a verified photograph is available.
 
 Confirm workshop acceptance, the final date, and submission details before updating the corresponding public claims. Portrait and biography sources are recorded in [`assets/people/SOURCES.md`](assets/people/SOURCES.md).
 
