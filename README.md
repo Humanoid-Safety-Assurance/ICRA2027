@@ -6,7 +6,7 @@ Final workshop acceptance and scheduling are pending. The proposed date is **24 
 
 ## Website
 
-This repository contains the independent ICRA workshop website: [Humanoid-Safety-Assurance/icra2027](https://github.com/Humanoid-Safety-Assurance/icra2027). Workshop content is based on the organizers' October 25, 2026 speaker brief. Speaker and organizer profiles were checked against their academic, institutional, or professional pages on October 29, 2026.
+This repository contains the independent ICRA workshop website: [Humanoid-Safety-Assurance/icra2027](https://github.com/Humanoid-Safety-Assurance/icra2027). Workshop content was aligned with the organizers' working proposal on November 1, 2026. The page includes the proposed program, shared warehouse-humanoid discussion case, planned discussion outputs, and contribution scope. The call, submission instructions, session times, and talk roles remain pending. Speaker and organizer profiles were checked against their academic, institutional, or professional pages on October 29–30, 2026.
 
 - `index.html` — workshop page
 - `styles.css` — responsive styles
@@ -35,5 +35,7 @@ Bowen Weng, Ibrahim Habli, Taisuke Kobayashi, and Haimin Hu have agreed to parti
 Two additional speaker positions are shown as “To be announced,” consistent with the planned six invited talks. The four speaker profiles use a two-column desktop layout. Portraits use rectangular 4:5 frames with individual framing in `styles.css`. Xinye Liu is represented by initials until a verified photograph is available.
 
 Confirm workshop acceptance, the final date, and submission details before updating the corresponding public claims. Portrait and biography sources are recorded in [`assets/people/SOURCES.md`](assets/people/SOURCES.md).
+
+The organizing-experience paragraph links to PI² 2025, RSS 2026, IROS 2026, and ICRA 2026 with Chuchu Chen's and Guoquan Huang's respective roles. Prior-event photographs are intentionally excluded from this website at the user's request.
 
 The hero uses a generated humanoid-laboratory illustration, a translucent dark-teal text panel, and a separate event-information strip. On narrower screens, the image and text stack to preserve the complete robot. The built-in image-generation tool and exact prompt are documented in [`assets/banner/SOURCES.md`](assets/banner/SOURCES.md). It is a conceptual illustration, not a photograph from this proposed workshop.
